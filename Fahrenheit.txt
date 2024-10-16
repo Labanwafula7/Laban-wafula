@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int fahrenheit = 0;
+
+    // While loop that converts Fahrenheit to Celsius in steps of 10
+    while (fahrenheit <= 100)
+    {
+        int celsius = (fahrenheit - 32) * 5 / 9;
+        printf("%d degrees F = %d degrees C\n", fahrenheit, celsius);
+        fahrenheit += 10;  // Increase by 10 degrees
+    }
+        return 0;
+}
